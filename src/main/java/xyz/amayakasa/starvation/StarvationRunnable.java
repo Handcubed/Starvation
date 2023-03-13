@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * When a player reaches a certain food level, negative effects are applying on him.
+ * When a player reaches a certain food level, negative effects are applied on him.
  *
  * @author Yuly Gorbatkov, Ivan Volokitin.
  * Special thanks to Aram Elbadian.
