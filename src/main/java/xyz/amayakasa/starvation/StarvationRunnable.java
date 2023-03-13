@@ -27,25 +27,25 @@ public class StarvationRunnable extends BukkitRunnable {
     private final Map<Integer, Set<PotionEffect>> negativeEffects = ImmutableMap.of(
             12, ImmutableSet.of(
                     new PotionEffect(
-                            PotionEffectType.SLOW_DIGGING, Integer.MAX_VALUE, 1,
+                            PotionEffectType.SLOW_DIGGING, 18000, 1,
                             false, false, false
                     )
             ),
             8, ImmutableSet.of(
                     new PotionEffect(
-                            PotionEffectType.SLOW, Integer.MAX_VALUE, 0,
+                            PotionEffectType.SLOW, 18000, 0,
                             false, false, false
                     )
             ),
             6, ImmutableSet.of(
                     new PotionEffect(
-                            PotionEffectType.WEAKNESS, Integer.MAX_VALUE, 0,
+                            PotionEffectType.WEAKNESS, 18000, 0,
                             false, false, false
                     )
             ),
             2, ImmutableSet.of(
                     new PotionEffect(
-                            PotionEffectType.BLINDNESS, Integer.MAX_VALUE, 0,
+                            PotionEffectType.BLINDNESS, 18000, 0,
                             false, false, false
                     )
             )
