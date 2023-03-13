@@ -19,30 +19,33 @@ import java.util.Set;
 public class StarvationRunnable extends BukkitRunnable {
     /**
      * The food level and its negative effects.
-     * 5.5 chicken legs — Weakness I & Mining Fatigue II.
-     * 3 chicken legs — Slowness I.
-     * 1 chicken legs — Blindness II.
+     * 6 chicken legs — Mining Fatigue II.
+     * 4 chicken legs — Slowness I.
+     * 3 chicken legs — Weakness I.
+     * 1 chicken leg — Blindness I.
      */
     private final Map<Integer, Set<PotionEffect>> negativeEffects = ImmutableMap.of(
-            11, ImmutableSet.of(
-                    new PotionEffect(
-                            PotionEffectType.WEAKNESS, Integer.MAX_VALUE, 0,
-                            false, false, false
-                    ),
+            12, ImmutableSet.of(
                     new PotionEffect(
                             PotionEffectType.SLOW_DIGGING, Integer.MAX_VALUE, 1,
                             false, false, false
                     )
             ),
-            6, ImmutableSet.of(
+            8, ImmutableSet.of(
                     new PotionEffect(
                             PotionEffectType.SLOW, Integer.MAX_VALUE, 0,
                             false, false, false
                     )
             ),
+            6, ImmutableSet.of(
+                    new PotionEffect(
+                            PotionEffectType.WEAKNESS, Integer.MAX_VALUE, 0,
+                            false, false, false
+                    )
+            ),
             2, ImmutableSet.of(
                     new PotionEffect(
-                            PotionEffectType.BLINDNESS, Integer.MAX_VALUE, 1,
+                            PotionEffectType.BLINDNESS, Integer.MAX_VALUE, 0,
                             false, false, false
                     )
             )
